@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Didact Gothic';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/DidactGothic-Regular.ttf');
+}
+
+html, body {
+    display: flex;
+    font-family: 'Didact Gothic', sans-serif;
+    width: 100%;
+    color: #1A202C;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+h1.title {
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 25px auto;
+    width: 100%;
+}
+
+ul.previews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: stretch;
+    list-style: none;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+ul.previews > li {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media  (min-width: 640px) {
+    ul.previews {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+    ul.previews {
+        max-width: 700px;
+    }
+}
+
+ul.previews > li  > a {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px 7px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul.previews > li > a > h3 {
+    font-weight: 400;
+    margin: 3px auto;
+}
+
+ul.previews > li > a > p {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 5px auto;
+    color: #4A5568;
+}
+
+ul.previews > li > a,
+ul.previews > li > a:visited {
+    color: inherit;
+}
+
